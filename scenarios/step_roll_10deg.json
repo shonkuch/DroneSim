@@ -1,0 +1,13 @@
+{
+  "name": "step_roll_10deg",
+  "durationSec": 35,
+  "rateHz": 20,
+  "actions": [
+    { "t": 0, "type": "set_mode", "mode": "GUIDED" },
+    { "t": 1, "type": "arm" },
+    { "t": 2, "type": "takeoff", "altM": 10 },
+    { "t": 8, "type": "set_attitude", "rollDeg": 10, "pitchDeg": 0, "yawDeg": 0, "thrust": 0.55, "durationSec": 5 },
+    { "t": 15, "type": "set_attitude", "rollDeg": 0, "pitchDeg": 0, "yawDeg": 0, "thrust": 0.55, "durationSec": 5 },
+    { "t": 30, "type": "land" }
+  ]
+}
