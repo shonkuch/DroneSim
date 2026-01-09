@@ -656,7 +656,7 @@ const AP_Param::Info Copter::var_info[] = {
     GSCALAR(throw_altitude_descend, "THROW_ALT_DCSND", 1.0),
 
     // @Param: THROW_ALT_ACSND
-    // @DisplayName: Throw mode target altitude to ascsend
+    // @DisplayName: Throw mode target altitude to ascend
     // @Description: Target altitude to ascend during a throw upwards (must be positive). This allows for rapidly clearing surrounding obstacles.
     // @Units: m
     // @User: Advanced
