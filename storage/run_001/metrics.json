@@ -1,0 +1,50 @@
+{
+  "csv": "C:\\Repos\\DroneSim\\storage\\run_001\\telemetry.csv",
+  "columns": [
+    "t",
+    "cmd_roll_deg",
+    "cmd_pitch_deg",
+    "cmd_yaw_deg",
+    "cmd_thrust",
+    "roll_rad",
+    "pitch_rad",
+    "yaw_rad",
+    "alt_m",
+    "servo1",
+    "servo2",
+    "servo3",
+    "servo4",
+    "servo_time_usec",
+    "roll_deg"
+  ],
+  "metrics": {
+    "t_on": 8.044,
+    "t_off": 15.058,
+    "cmd_step_deg": 10.0,
+    "rise_time_s": 0.2918709036812679,
+    "overshoot_pct": 0.3896541582569313,
+    "settling_time_s": 0.5540000000000003,
+    "steady_state_err_deg": null,
+    "rms_err_deg": 1.6163337432582339,
+    "alt_drift_m": 1.6189999999999998,
+    "alt_drift_mps": 0.23082406615340745,
+    "servo_peak": {
+      "servo1": 1.6200000000000045,
+      "servo2": 87.0,
+      "servo3": 82.0,
+      "servo4": 76.0
+    },
+    "servo_std": {
+      "servo1": 0.35575210554821085,
+      "servo2": 14.740485523351069,
+      "servo3": 13.817124398102003,
+      "servo4": 11.517280171217825
+    }
+  },
+  "score_0_100": 0.0,
+  "notes": {
+    "settling_band_deg": 0.2,
+    "steady_state_window": "last 20% of step window",
+    "hint": "If servo_time_usec exists, your telemetry rows had 1 extra field vs header."
+  }
+}
