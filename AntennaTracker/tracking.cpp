@@ -165,13 +165,13 @@ void Tracker::tracking_update_pressure(const mavlink_scaled_pressure_t &msg)
     if (!isnan(alt_diff) && !isinf(alt_diff)) {
         nav_status.alt_difference_baro = alt_diff + nav_status.altitude_offset;
 
-		if (nav_status.need_altitude_calibration) {
-			// we have done a baro calibration - zero the altitude
-			// difference to the aircraft
-			nav_status.altitude_offset = -alt_diff;
-			nav_status.alt_difference_baro = 0;
-			nav_status.need_altitude_calibration = false;
-		}
+        if (nav_status.need_altitude_calibration) {
+            // we have done a baro calibration - zero the altitude
+            // difference to the aircraft
+            nav_status.altitude_offset = -alt_diff;
+            nav_status.alt_difference_baro = 0;
+            nav_status.need_altitude_calibration = false;
+        }
     }
 
 #if HAL_LOGGING_ENABLED
