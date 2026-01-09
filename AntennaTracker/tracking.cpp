@@ -74,7 +74,7 @@ void Tracker::update_bearing_and_distance()
     	if (g.alt_source == ALT_SOURCE_BARO) {
     	    nav_status.pitch = degrees(atan2f(nav_status.alt_difference_baro, nav_status.distance));
     	} else {
-            nav_status.pitch = degrees(atan2f(nav_status.alt_difference_gps, nav_status.distance));
+    	    nav_status.pitch = degrees(atan2f(nav_status.alt_difference_gps, nav_status.distance));
     	}
     }
 }
